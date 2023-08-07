@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import "../styles/global.css";
+import "../styles/QuotesPage.style.css";
 
 function QuotesPage() {
   const [quotesData, setQuotesData] = useState();
@@ -27,8 +27,9 @@ function QuotesPage() {
       <div className="quotes-wrapper">
         <div className="content">
           <h1>
-            {quotesData?.quote} - <span>{quotesData?.character}</span> from{" "}
-            <span>{quotesData?.anime}</span>
+            {quotesData?.quote} -{" "}
+            <span className="blocked-text">{quotesData?.character}</span> from{" "}
+            <span className="blocked-text">{quotesData?.anime}</span>
           </h1>
           <button className="btn-generate" onClick={handleGenerate}>
             Generate Other
