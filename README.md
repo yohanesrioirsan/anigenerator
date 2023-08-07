@@ -1,7 +1,7 @@
-# Anime Quotes Generator API by Animechan
+# Anime List & Quotes 
 
-A simple website that can generate quotes from anime shows.
-Build with ReactJS, with Animechan API (https://animechan.xyz/)
+A simple website that can generate quotes from anime.
+Build with reactJs with <a href="https://animechan.xyz/">Animechan</a> & <a href="https://jikan.moe/">Jikan</a> REST API
 
 # How to run
 - Clone the repository.
