@@ -12,7 +12,7 @@ function App() {
       element: <Home />,
     },
     {
-      path: "/quotes",
+      path: "/aniquotes",
       element: <QuotesPage />,
     },
     {
