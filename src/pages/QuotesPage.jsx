@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 import "../styles/QuotesPage.style.css";
 
 function QuotesPage() {
@@ -24,6 +25,12 @@ function QuotesPage() {
 
   return (
     <section className="quotes-page">
+      <Link to="/">
+        <button className="btn-search">Home</button>
+      </Link>
+      <Link to="/anilist">
+        <button className="btn-search">AnimeList</button>
+      </Link>
       <div className="quotes-wrapper">
         <div className="content">
           <h1>
@@ -36,6 +43,12 @@ function QuotesPage() {
           </button>
         </div>
       </div>
+      <footer>
+        <h5>
+          Anime List made by Rio Irsan, API by{" "}
+          <a href="animechan.xyz">AnimeChan</a>
+        </h5>
+      </footer>
     </section>
   );
 }
